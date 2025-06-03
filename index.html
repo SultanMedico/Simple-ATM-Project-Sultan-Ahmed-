@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple ATM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="atm-container">
+        <h3>Simple ATM Project (Sultan Ahmed)</h3>
+
+        <h1>Welcome to Simple ATM</h1>
+
+        <div id="login-screen" class="screen active">
+            <h2>Enter PIN</h2>
+            <input type="password" id="pin-input" placeholder="Enter 4-digit PIN">
+            <button id="pin-submit-btn">Submit PIN</button>
+            <div id="login-message" class="message"></div>
+        </div>
+
+        <div id="main-menu-screen" class="screen">
+            <h2>Main Menu</h2>
+            <p>Current Balance: $<span id="balance-display">1000.00</span></p>
+            <button id="deposit-btn">Deposit</button>
+            <button id="withdraw-btn">Withdraw</button>
+            <button id="check-balance-btn">Check Balance</button>
+            <button id="logout-btn">Logout</button>
+            <div id="transaction-message" class="message"></div>
+        </div>
+
+        <div id="deposit-screen" class="screen">
+            <h2>Deposit Money</h2>
+            <input type="number" id="deposit-amount-input" placeholder="Enter amount">
+            <button id="deposit-submit-btn">Deposit</button>
+            <button id="deposit-back-btn">Back to Main Menu</button>
+            <div id="deposit-message" class="message"></div>
+        </div>
+
+        <div id="withdraw-screen" class="screen">
+            <h2>Withdraw Money</h2>
+            <input type="number" id="withdraw-amount-input" placeholder="Enter amount">
+            <button id="withdraw-submit-btn">Withdraw</button>
+            <button id="withdraw-back-btn">Back to Main Menu</button>
+            <div id="withdraw-message" class="message"></div>
+        </div>
+
+        <div id="balance-screen" class="screen">
+            <h2>Your Current Balance</h2>
+            <p class="large-text">Balance: $<span id="current-balance-check">1000.00</span></p>
+            <button id="balance-back-btn">Back to Main Menu</button>
+        </div>
+
+    </div>
+
+    <script src="myScript.js"></script>
+</body>
+</html>
+
+
+
